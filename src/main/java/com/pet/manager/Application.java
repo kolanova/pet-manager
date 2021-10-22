@@ -1,6 +1,5 @@
 package com.pet.manager;
 
-import com.pet.manager.exception.DuplicatedPetException;
 import com.pet.manager.model.Author;
 import com.pet.manager.model.Pet;
 import com.pet.manager.repository.AuthorRepository;

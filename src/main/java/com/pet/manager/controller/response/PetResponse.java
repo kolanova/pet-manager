@@ -1,5 +1,6 @@
-package com.pet.manager.controller;
+package com.pet.manager.controller.response;
 
+import com.pet.manager.model.PetType;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -9,7 +10,8 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
-public class CreatePetRQ {
+public class PetResponse {
     private String name;
-    private String petType;
+    private int age;
+    private PetType petType;
 }

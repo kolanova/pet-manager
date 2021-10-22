@@ -22,7 +22,6 @@ public class AuthorController {
                 .firstName(author.getFirstName())
                 .lastName(author.getLastName())
                 .build();
-
         return ResponseEntity.ok(response);
     }
 
@@ -30,7 +29,6 @@ public class AuthorController {
     public ResponseEntity<AuthorResponse> getAuthorByFirstName(@RequestBody AuthorCreationRequest request) {
 
         final var author = authorService.createAuthor(request.getFirstName(), request.getLastName(), request.getAge());
-
         return ResponseEntity.created(URI.create("/authors/" + author.getId())).build();
     }
 }
